@@ -21,3 +21,15 @@ h1 {
   padding: 20px;
   margin: 15px;
 }
+
+/* Celulares: hasta 768px de ancho */
+@media (max-width: 768px) {
+  .tarjeta-mueble {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
