@@ -1,0 +1,49 @@
+PARTE C - Comparación
+
+3 diferencias concretas entre mi versión (blog.html) y la de Cursor (blog-cursor.html):
+
+1) El nav. Yo puse los tres links sueltos adentro del nav (blog.html, líneas 14 a 18).
+Cursor los metió dentro de una lista ul con li y encima le agregó aria-label al nav
+(blog-cursor.html, líneas 14 a 20). O sea armó el menú como lista y yo no.
+
+2) La imagen. Yo dejé la imagen con un img solo y nada más (blog.html, línea 25).
+Cursor la envolvió en figure con figcaption y le puso un texto abajo tipo epígrafe
+(blog-cursor.html, líneas 31 a 34). Eso yo ni lo pensé.
+
+3) La info del artículo. Cursor agregó una línea con la fecha usando la etiqueta time y
+el autor debajo del h2 (blog-cursor.html, línea 26), y también un meta description en el
+head (línea 7). Mi versión no tiene ni fecha ni description.
+
+Una cosa que Cursor hizo mejor que yo:
+El HTML le quedó más semántico. Lo de figure/figcaption para la imagen y el nav como lista
+ul están mejor hechos que como lo dejé yo, y eso ayuda a la accesibilidad. No se me habría
+ocurrido usar esas etiquetas.
+
+Una cosa que yo haría distinto que Cursor:
+Cursor se puso a agregar cosas que el ejercicio no pedía (el epígrafe, la fecha, el autor,
+el meta description). El enunciado decía solo estructura, así que yo lo dejaría más pegado a
+lo que pedía la consigna en vez de meter tantos extras.
+
+El prompt que usé (método CREAR):
+
+Contexto: Estoy haciendo el ejercicio 3 del campus para "Hermanos Jota", una mueblería
+artesanal. Necesito la estructura de un blog en HTML puro.
+
+Rol: Actuá como desarrollador web front-end con foco en HTML semántico.
+
+Especificaciones (Explícito): Generá un archivo blog-cursor.html con SOLO estructura, sin
+nada de CSS. Debe tener: un header con un h1 ("El blog del taller") y un nav con tres
+enlaces (Inicio, Acerca de, Contacto); un main con un article que contenga un h2, varios
+párrafos, una imagen y dos section adentro (cada una con su h3); un aside con un título
+"Artículos populares" y una lista de enlaces; y un footer con el copyright.
+
+Acotaciones: La temática es carpintería/mueblería. No agregues CSS ni JavaScript. HTML5 válido.
+
+Resultado esperado (Ejemplo): Quiero que la estructura se parezca a esto:
+<article>
+  <h2>Título del artículo</h2>
+  <p>Párrafo de introducción...</p>
+  <img src="imagenes/foto.jpg" alt="Descripción de la foto">
+  <section><h3>Primer subtema</h3><p>Texto...</p></section>
+  <section><h3>Segundo subtema</h3><p>Texto...</p></section>
+</article>
