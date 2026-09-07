@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+.galeria {
+  display: flex;
+  gap: 20px;
+}
+
+.tarjeta-foto {
+  width: 30%;
+  padding: 15px;
+  border: 1px solid #cccccc;
+  box-shadow: 5px 5px 10px #e0e0e0;
+}
+
+.tarjeta-foto img {
+  width: 100%;
+  height: auto;
+}

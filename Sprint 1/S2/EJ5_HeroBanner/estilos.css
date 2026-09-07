@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-banner {
+  height: 100vh;
+  background-image: url("K2.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-banner h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 64px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+.hero-banner p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 767px) {
+  .hero-banner h1 {
+    font-size: 36px;
+  }
+
+  .hero-banner p {
+    font-size: 16px;
+  }
+}
