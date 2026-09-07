@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hermanos Jota — Muebles artesanales hechos en San Cristóbal, Buenos Aires. Redescubrir el arte de vivir.">
+  <title>Hermanos Jota | Inicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabecera: se repite igual en las 4 páginas -->
+  <header class="cabecera">
+    <a href="index.html" class="logo" aria-label="Ir al inicio — Hermanos Jota">
+      <img src="img/logo.svg" alt="Monograma hj de Hermanos Jota">
+    </a>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="carrito.html" class="carrito" aria-label="Ver el carrito">Carrito <span id="contador-carrito">0</span></a>
+  </header>
+
+  <main>
+
+    <section class="hero-banner" aria-labelledby="titulo-principal">
+      <h1 id="titulo-principal">Redescubrir el arte de vivir</h1>
+      <p>
+        Muebles hechos a mano en San Cristóbal, con maderas nobles y el tiempo que cada pieza merece.
+        Cada una cuenta la historia de manos expertas y materiales nobles.
+      </p>
+      <a href="productos.html" class="boton">Ver catálogo</a>
+    </section>
+
+    <section aria-labelledby="titulo-destacados">
+      <h2 id="titulo-destacados">Piezas destacadas</h2>
+      <!-- Las tarjetas se generan con JS (js/inicio.js) -->
+      <div class="galeria-productos" id="destacados">
+        <p class="aviso">Cargando piezas…</p>
+      </div>
+    </section>
+
+    <section id="nosotros" aria-labelledby="titulo-nosotros">
+      <h2 id="titulo-nosotros">Nosotros</h2>
+      <p>
+        Somos un taller familiar en el barrio de San Cristóbal. Trabajamos con maderas nativas
+        certificadas, acabados naturales y la calma de hacer las cosas bien. Herencia e innovación:
+        la calidez de los años 60 con la <strong>conciencia de hoy</strong>.
+      </p>
+
+      <aside aria-labelledby="titulo-sustentabilidad">
+        <h3 id="titulo-sustentabilidad">Cómo trabajamos</h3>
+        <ul>
+          <li>Madera certificada FSC de bosques responsables argentinos</li>
+          <li>Prioridad a maderas nativas: algarrobo, quebracho, caldén</li>
+          <li>Solo acabados y adhesivos de bajo COV</li>
+          <li>Proveedores locales dentro del Gran Buenos Aires</li>
+          <li>30% mínimo de materiales recuperados o reciclados</li>
+          <li>Cero plásticos de un solo uso en toda la cadena</li>
+        </ul>
+      </aside>
+    </section>
+
+  </main>
+
+  <!-- Pie de página: datos de contacto del manual de marca -->
+  <footer>
+    <section class="pie-columna">
+      <h2>Showroom y taller</h2>
+      <address>
+        Hermanos Jota — Casa Taller<br>
+        Av. San Juan 2847<br>
+        C1232AAB — Barrio de San Cristóbal<br>
+        Ciudad Autónoma de Buenos Aires, Argentina
+      </address>
+    </section>
+
+    <section class="pie-columna">
+      <h2>Horarios</h2>
+      <p>Lunes a Viernes: 10:00 – 19:00</p>
+      <p>Sábados: 10:00 – 14:00</p>
+    </section>
+
+    <section class="pie-columna">
+      <h2>Contacto</h2>
+      <ul>
+        <li><a href="mailto:info@hermanosjota.com.ar">info@hermanosjota.com.ar</a></li>
+        <li><a href="mailto:ventas@hermanosjota.com.ar">ventas@hermanosjota.com.ar</a></li>
+        <li><a href="https://www.instagram.com/hermanosjota_ba" target="_blank" rel="noopener noreferrer">@hermanosjota_ba</a></li>
+        <li><a href="https://wa.me/541145678900" target="_blank" rel="noopener noreferrer">WhatsApp +54 11 4567-8900</a></li>
+      </ul>
+    </section>
+
+    <p class="copyright">&copy; 2026 Hermanos Jota. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>

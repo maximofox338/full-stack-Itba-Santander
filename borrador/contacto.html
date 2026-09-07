@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactá a Hermanos Jota: showroom en San Cristóbal, horarios, email, Instagram y WhatsApp.">
+  <title>Hermanos Jota | Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabecera: se repite igual en las 4 páginas -->
+  <header class="cabecera">
+    <a href="index.html" class="logo" aria-label="Ir al inicio — Hermanos Jota">
+      <img src="img/logo.svg" alt="Monograma hj de Hermanos Jota">
+    </a>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="carrito.html" class="carrito" aria-label="Ver el carrito">Carrito <span id="contador-carrito">0</span></a>
+  </header>
+
+  <main>
+
+    <section aria-labelledby="titulo-contacto">
+      <h1 id="titulo-contacto">Contacto</h1>
+      <p>Contanos qué espacio querés transformar. Te respondemos con calma y en persona.</p>
+
+      <div class="contacto-contenido">
+
+        <!-- La validación se hace con JS (js/contacto.js), sin "required" -->
+        <form id="form-contacto" class="formulario-contacto" novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <p class="error" id="error-nombre"></p>
+          </div>
+
+          <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <p class="error" id="error-email"></p>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            <p class="error" id="error-mensaje"></p>
+          </div>
+
+          <button type="submit" class="boton">Enviar mensaje</button>
+
+          <p class="exito" id="mensaje-exito"></p>
+        </form>
+
+        <aside class="showroom" aria-labelledby="titulo-showroom">
+          <h3 id="titulo-showroom">Showroom y taller</h3>
+          <address>
+            Hermanos Jota — Casa Taller<br>
+            Av. San Juan 2847<br>
+            C1232AAB — Barrio de San Cristóbal<br>
+            Ciudad Autónoma de Buenos Aires, Argentina
+          </address>
+
+          <h3>Horarios</h3>
+          <p>Lunes a Viernes: 10:00 – 19:00</p>
+          <p>Sábados: 10:00 – 14:00</p>
+
+          <h3>Escribinos</h3>
+          <ul>
+            <li>Consultas: <a href="mailto:info@hermanosjota.com.ar">info@hermanosjota.com.ar</a></li>
+            <li>Ventas: <a href="mailto:ventas@hermanosjota.com.ar">ventas@hermanosjota.com.ar</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/hermanosjota_ba" target="_blank" rel="noopener noreferrer">@hermanosjota_ba</a></li>
+            <li>WhatsApp: <a href="https://wa.me/541145678900" target="_blank" rel="noopener noreferrer">+54 11 4567-8900</a></li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página: datos de contacto del manual de marca -->
+  <footer>
+    <section class="pie-columna">
+      <h2>Showroom y taller</h2>
+      <address>
+        Hermanos Jota — Casa Taller<br>
+        Av. San Juan 2847<br>
+        C1232AAB — Barrio de San Cristóbal<br>
+        Ciudad Autónoma de Buenos Aires, Argentina
+      </address>
+    </section>
+
+    <section class="pie-columna">
+      <h2>Horarios</h2>
+      <p>Lunes a Viernes: 10:00 – 19:00</p>
+      <p>Sábados: 10:00 – 14:00</p>
+    </section>
+
+    <section class="pie-columna">
+      <h2>Contacto</h2>
+      <ul>
+        <li><a href="mailto:info@hermanosjota.com.ar">info@hermanosjota.com.ar</a></li>
+        <li><a href="mailto:ventas@hermanosjota.com.ar">ventas@hermanosjota.com.ar</a></li>
+        <li><a href="https://www.instagram.com/hermanosjota_ba" target="_blank" rel="noopener noreferrer">@hermanosjota_ba</a></li>
+        <li><a href="https://wa.me/541145678900" target="_blank" rel="noopener noreferrer">WhatsApp +54 11 4567-8900</a></li>
+      </ul>
+    </section>
+
+    <p class="copyright">&copy; 2026 Hermanos Jota. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/carrito.js"></script>
+  <script src="js/contacto.js"></script>
+</body>
+</html>

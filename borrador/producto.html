@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detalle de producto de Hermanos Jota: descripción, ficha técnica y precio.">
+  <title>Hermanos Jota | Producto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabecera: se repite igual en las 4 páginas -->
+  <header class="cabecera">
+    <a href="index.html" class="logo" aria-label="Ir al inicio — Hermanos Jota">
+      <img src="img/logo.svg" alt="Monograma hj de Hermanos Jota">
+    </a>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html" aria-current="page">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="carrito.html" class="carrito" aria-label="Ver el carrito">Carrito <span id="contador-carrito">0</span></a>
+  </header>
+
+  <main>
+
+    <!-- El contenido del producto se genera con JS (js/detalle.js) -->
+    <article class="detalle" id="detalle">
+      <p class="aviso">Cargando la pieza…</p>
+    </article>
+
+    <aside aria-labelledby="titulo-herencia">
+      <h3 id="titulo-herencia">Programa "Herencia Viva"</h3>
+      <ul>
+        <li>Garantía extendida: 10 años en estructura, 5 años en acabados</li>
+        <li>Servicio de restauración de piezas antiguas</li>
+        <li>Taller de cuidados: capacitación gratuita para clientes</li>
+        <li>Recompra garantizada: hasta 40% del valor en piezas bien cuidadas</li>
+        <li>Certificado de trazabilidad del origen de cada material</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- Pie de página: datos de contacto del manual de marca -->
+  <footer>
+    <section class="pie-columna">
+      <h2>Showroom y taller</h2>
+      <address>
+        Hermanos Jota — Casa Taller<br>
+        Av. San Juan 2847<br>
+        C1232AAB — Barrio de San Cristóbal<br>
+        Ciudad Autónoma de Buenos Aires, Argentina
+      </address>
+    </section>
+
+    <section class="pie-columna">
+      <h2>Horarios</h2>
+      <p>Lunes a Viernes: 10:00 – 19:00</p>
+      <p>Sábados: 10:00 – 14:00</p>
+    </section>
+
+    <section class="pie-columna">
+      <h2>Contacto</h2>
+      <ul>
+        <li><a href="mailto:info@hermanosjota.com.ar">info@hermanosjota.com.ar</a></li>
+        <li><a href="mailto:ventas@hermanosjota.com.ar">ventas@hermanosjota.com.ar</a></li>
+        <li><a href="https://www.instagram.com/hermanosjota_ba" target="_blank" rel="noopener noreferrer">@hermanosjota_ba</a></li>
+        <li><a href="https://wa.me/541145678900" target="_blank" rel="noopener noreferrer">WhatsApp +54 11 4567-8900</a></li>
+      </ul>
+    </section>
+
+    <p class="copyright">&copy; 2026 Hermanos Jota. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/detalle.js"></script>
+</body>
+</html>
